@@ -1,472 +1,640 @@
 <div align="center">
   <br />
-    <a href="https://youtu.be/CzJQEstIiEI" target="_blank">
-      <img src="assets/readme/hero.webp" alt="Project Banner">
-    </a>
-  <br />
+  <h1>🏡 Real Scout - Real Estate Application</h1>
+  <p><strong>Your Gateway to Finding the Perfect Home</strong></p>
+  
   <div>
+    <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react-native" />
     <img src="https://img.shields.io/badge/-Expo-black?style=for-the-badge&logoColor=white&logo=expo&color=000020" alt="expo" />
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
     <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/-NativeWind-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=38BDF8" alt="nativewind" />
   </div>
-
-  <h3 align="center">A Real Estate App</h3>
-
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
+  
+  <br />
+  
+  ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+  ![License](https://img.shields.io/badge/license-MIT-green.svg)
+  ![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20Android-lightgrey)
+  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+  
 </div>
 
-## 📋 <a name="table">Table of Contents</a>
+---
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets](#snippets)
-6. 🔗 [Assets](#links)
-7. 🚀 [More](#more)
+## 📋 Table of Contents
 
-## 🚨 Tutorial
+1. [🎯 Introduction](#-introduction)
+2. [✨ Features](#-features)
+3. [🏗️ Architecture](#️-architecture)
+4. [⚙️ Tech Stack](#️-tech-stack)
+5. [📱 Screenshots](#-screenshots)
+6. [🚀 Getting Started](#-getting-started)
+7. [📁 Project Structure](#-project-structure)
+8. [🔐 Authentication Flow](#-authentication-flow)
+9. [💾 Database Schema](#-database-schema)
+10. [🧪 Testing](#-testing)
+11. [🗺️ Future Roadmap](#️-future-roadmap)
+12. [👨‍💻 Author](#-author)
+13. [📄 License](#-license)
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. 
+---
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
+## 🎯 Introduction
 
-<a href="https://youtu.be/CzJQEstIiEI" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+**Real Scout** is a modern, full-stack real estate mobile application built with React Native and Expo. It provides users with a seamless experience to browse, search, and explore properties with an intuitive interface and powerful features. The app leverages Google OAuth for secure authentication and Appwrite as a backend-as-a-service platform for managing data, authentication, and storage.
 
-## <a name="introduction">🤖 Introduction</a>
+### Key Highlights
 
-Build a full-stack Real Estate application with React Native, featuring Google authentication, dynamic property listings, and user profiles. Designed with modern tools like Expo SDK 52, Appwrite, Tailwind CSS, and TypeScript for a seamless and scalable experience.
+- 🔒 **Secure Authentication** with Google OAuth
+- 🏠 **Dynamic Property Listings** with advanced search and filtering
+- 📱 **Cross-platform** support (iOS & Android)
+- 🎨 **Modern UI/UX** with NativeWind (Tailwind CSS for React Native)
+- ⚡ **Fast Performance** with optimized data fetching
+- 🔄 **Real-time Updates** with Appwrite
+- 🌱 **Database Seeding** utility for quick setup
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **50k+** members. It's a place where people help each other out.
+---
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+## ✨ Features
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+| Feature                   | Description                                               | Status         |
+| ------------------------- | --------------------------------------------------------- | -------------- |
+| **Google Authentication** | Seamless OAuth 2.0 login with Google                      | ✅ Implemented |
+| **Property Browsing**     | Browse all available properties with pagination           | ✅ Implemented |
+| **Advanced Search**       | Search properties by name, address, or type               | ✅ Implemented |
+| **Smart Filters**         | Filter properties by type (House, Apartment, Villa, etc.) | ✅ Implemented |
+| **Property Details**      | Comprehensive property information with image gallery     | ✅ Implemented |
+| **User Profiles**         | Manage user settings and preferences                      | ✅ Implemented |
+| **Agent Information**     | View detailed agent profiles and contact info             | ✅ Implemented |
+| **Reviews & Ratings**     | Read property reviews and ratings                         | ✅ Implemented |
+| **Facilities Overview**   | View property amenities (Gym, Pool, Parking, etc.)        | ✅ Implemented |
+| **Database Seeding**      | Quick setup with sample data                              | ✅ Implemented |
+| **Responsive Design**     | Optimized for all screen sizes                            | ✅ Implemented |
+| **Offline Support**       | Cache data for offline viewing                            | 🔄 In Progress |
+| **Push Notifications**    | Get notified about new properties                         | 📋 Planned     |
+| **Favorites/Wishlist**    | Save properties for later viewing                         | 📋 Planned     |
+| **Property Comparison**   | Compare multiple properties side-by-side                  | 📋 Planned     |
 
-- **[Expo](https://expo.dev/)** is an open-source platform for building universal native apps (Android, iOS, web) using JavaScript/TypeScript and React Native. It features file-based routing via Expo Router, fast refresh, native modules for camera/maps/notifications, over-the-air updates (EAS), and streamlined app deployment.
+---
 
-- **[React Native](https://reactnative.dev/)** is a framework for building mobile UIs with React. It enables component‑based, cross-platform development with declarative UI, deep native API support, and is tightly integrated with Expo for navigation and native capabilities.
+## 🏗️ Architecture
 
-- **[Appwrite](https://jsm.dev/rn25-appwrite)** is an open-source backend-as-a-service platform offering secure authentication (email/password, OAuth, SMS, magic links), databases, file storage with compression/encryption, real-time messaging, serverless functions, and static site hosting via Appwrite Sites—all managed through a unified console and microservices architecture.
+Real Scout follows a clean, scalable architecture pattern with clear separation of concerns:
 
-- **[TypeScript](https://www.typescriptlang.org/)** is a statically-typed superset of JavaScript providing type annotations, interfaces, enums, generics, and enhanced tooling. It improves error detection, code quality, and scalability—ideal for robust, maintainable projects.
+```mermaid
+graph TB
+    subgraph "Presentation Layer"
+        A[React Native Components]
+        B[Expo Router Navigation]
+        C[NativeWind Styling]
+    end
 
-- **[NativeWind](https://www.nativewind.dev/)** brings Tailwind CSS to React Native and Expo, allowing you to style mobile components using utility-first classes for fast, consistent, and responsive UI design.
+    subgraph "Business Logic Layer"
+        D[Custom Hooks]
+        E[Global State Management]
+        F[Data Fetching Logic]
+    end
 
-- **[Tailwind CSS](https://tailwindcss.com/)** is a utility-first CSS framework enabling rapid UI design via low-level classes. In React Native/Expo, it’s commonly used with NativeWind to apply Tailwind-style utilities to mobile components.
+    subgraph "Data Layer"
+        G[Appwrite SDK]
+        H[Local Storage]
+    end
 
-## <a name="features">🔋 Features</a>
+    subgraph "Backend Services"
+        I[Appwrite Cloud]
+        J[Authentication Service]
+        K[Database Service]
+        L[Storage Service]
+    end
 
-👉 **Authentication with Google**: Secure and seamless user sign-ins using Google’s authentication service.
+    A --> D
+    B --> A
+    C --> A
+    D --> E
+    D --> F
+    F --> G
+    E --> H
+    G --> I
+    I --> J
+    I --> K
+    I --> L
 
-👉 **Home Page**: Displays the latest and recommended properties with powerful search and filter functionality.
-
-👉 **Explore Page**: Allows users to browse all types of properties with a clean and intuitive interface.
-
-👉 **Property Details Page**: Provides comprehensive information about individual properties, including images and key details.
-
-👉 **Profile Page**: Customizable user settings and profile management
-
-👉 **Centralized Data Fetching**: Custom-built solution inspired by TanStack’s useQuery for efficient API calls.
-
-and many more, including code architecture and reusability 
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
-
-```bash
-git clone https://github.com/adrianhajdin/react_native-restate.git
-cd react_native-restate
+    style A fill:#61DAFB
+    style I fill:#FD366E
+    style D fill:#3178C6
 ```
 
-**Installation** 
+### Architecture Layers
+
+1. **Presentation Layer**: React Native components styled with NativeWind
+2. **Business Logic Layer**: Custom hooks and state management
+3. **Data Layer**: Appwrite SDK integration with local caching
+4. **Backend Services**: Appwrite cloud services for auth, database, and storage
+
+---
+
+## ⚙️ Tech Stack
+
+### Frontend
+
+| Technology           | Version | Purpose                            |
+| -------------------- | ------- | ---------------------------------- |
+| **React Native**     | 0.81.5  | Cross-platform mobile framework    |
+| **Expo**             | ~54.0.0 | Development platform and toolchain |
+| **TypeScript**       | ^5.3.3  | Type-safe JavaScript               |
+| **NativeWind**       | ^4.1.23 | Tailwind CSS for React Native      |
+| **Expo Router**      | ~6.0.19 | File-based routing                 |
+| **React Navigation** | ^7.0.0  | Navigation library                 |
+
+### Backend & Services
+
+| Technology             | Purpose                     |
+| ---------------------- | --------------------------- |
+| **Appwrite**           | Backend-as-a-Service (BaaS) |
+| **Google OAuth**       | Authentication provider     |
+| **Appwrite Databases** | NoSQL document database     |
+| **Appwrite Storage**   | File storage and CDN        |
+
+### Development Tools
+
+| Tool       | Purpose                |
+| ---------- | ---------------------- |
+| **Jest**   | Unit testing framework |
+| **ESLint** | Code linting           |
+| **Babel**  | JavaScript compiler    |
+| **Metro**  | JavaScript bundler     |
+
+---
+
+## 📱 Screenshots
+
+> Coming soon: Screenshots and demo videos will be added here
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- **Node.js** (v18 or higher) - [Download](https://nodejs.org/)
+- **npm** or **yarn** - Comes with Node.js
+- **Git** - [Download](https://git-scm.com/)
+- **Expo Go** app on your mobile device (for testing)
+  - [iOS App Store](https://apps.apple.com/app/expo-go/id982107779)
+  - [Google Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent)
+
+### Installation Steps
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Mausam5055/Real-Estate-APP.git
+cd Real-Estate-APP
+```
+
+#### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-**Set Up Environment Variables**
+or with yarn:
 
-Create a new file named `.env.local` in the root of your project and add the following content:
+```bash
+yarn install
+```
+
+#### 3. Set Up Environment Variables
+
+Create a `.env.local` file in the root directory:
 
 ```env
 EXPO_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
-EXPO_PUBLIC_APPWRITE_PROJECT_ID=
-EXPO_PUBLIC_APPWRITE_DATABASE_ID=
-EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID=
-EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID=
-EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID=
-EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_project_id
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=your_database_id
+EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID=your_galleries_collection_id
+EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID=your_reviews_collection_id
+EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID=your_agents_collection_id
+EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID=your_properties_collection_id
+EXPO_PUBLIC_APPWRITE_BUCKET_ID=your_bucket_id
 ```
 
-Replace the values with your actual Appwrite credentials. You can obtain these credentials by signing up & creating a new project on the [**Appwrite Dashboard**](https://jsm.dev/rn25-appwrite).
+#### 4. Configure Appwrite
 
-**Start the app**
-   
+1. Create an account at [Appwrite Cloud](https://cloud.appwrite.io/)
+2. Create a new project
+3. Set up the following collections in your database:
+
+**Collections Schema:**
+
+| Collection     | Attributes                                                                                                                                                                       |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Properties** | name, type, description, address, geolocation, price, area, bedrooms, bathrooms, rating, facilities, image, agent (relationship), reviews (relationship), gallery (relationship) |
+| **Agents**     | name, email, avatar                                                                                                                                                              |
+| **Reviews**    | name, avatar, review, rating                                                                                                                                                     |
+| **Galleries**  | image                                                                                                                                                                            |
+
+4. Enable Google OAuth provider in Appwrite Authentication settings
+5. Copy your credentials to the `.env.local` file
+
+#### 5. Seed the Database (Optional)
+
+After setting up Appwrite, you can seed your database with sample data:
+
+1. Run the application
+2. Navigate to the Profile section
+3. Tap on "🌱 Seed Database"
+
+Or programmatically:
+
+```typescript
+import seed from "./lib/seed";
+await seed();
+```
+
+#### 6. Start the Development Server
+
 ```bash
- npx expo start
+npm start
 ```
 
-In the output, you'll find options to open the app in a
+or
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## <a name="snippets">🕸️ Snippets</a>
-
-<details>
-<summary><code>lib/data.ts</code></summary>
-
-```ts
-export const galleryImages = [
-  "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://unsplash.com/photos/comfort-room-with-white-bathtub-and-brown-wooden-cabinets-CMejBwGAdGk",
-  "https://images.unsplash.com/photo-1638799869566-b17fa794c4de?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1560185009-dddeb820c7b7?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1641910532059-ad684fd3049c?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1621293954908-907159247fc8?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1604328702728-d26d2062c20b?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1600435335786-d74d2bb6de37?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1635108198979-9806fdf275c6?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-];
-
-export const agentImages = [
-  "https://images.unsplash.com/photo-1691335053879-02096d6ee2ca?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1544723495-432537d12f6c?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1542507464418-09c375b86bbe?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-];
-
-export const reviewImages = [
-  "https://images.unsplash.com/photo-1517331671191-ddc2c6d3ebd1?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1474176857210-7287d38d27c6?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1511551203524-9a24350a5771?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-];
-
-export const propertiesImages = [
-  "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1605146768851-eda79da39897?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1561753757-d8880c5a3551?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1551241090-67de81d3541c?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1697299262049-e9b5fa1e9761?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1719299225324-301bad5c333c?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1582063289852-62e3ba2747f8?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1516095901529-0ef7be431a4f?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1600585153490-76fb20a32601?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1720432972486-2d53db5badf0?q=60&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-];
+```bash
+npx expo start
 ```
 
-</details>
+#### 7. Run on Your Device
 
-<details>
-<summary><code>lib/seed.ts</code></summary>
+- **Using Expo Go**: Scan the QR code with your camera (iOS) or Expo Go app (Android)
+- **iOS Simulator**: Press `i` in the terminal
+- **Android Emulator**: Press `a` in the terminal
 
-```ts
-import { ID } from "react-native-appwrite";
-import { databases, config } from "./appwrite";
-import {
-  agentImages,
-  galleryImages,
-  propertiesImages,
-  reviewImages,
-} from "./data";
+---
 
-const COLLECTIONS = {
-  AGENT: config.agentsCollectionId,
-  REVIEWS: config.reviewsCollectionId,
-  GALLERY: config.galleriesCollectionId,
-  PROPERTY: config.propertiesCollectionId,
-};
+## 📁 Project Structure
 
-const propertyTypes = [
-  "House",
-  "Townhomes",
-  "Condos",
-  "Duplexes",
-  "Studios",
-  "Villa",
-  "Apartments",
-  "Others",
-];
-
-const facilities = [
-  "Laundry",
-  "Car Parking",
-  "Sports Center",
-  "Cutlery",
-  "Gym",
-  "Swimming pool",
-  "Wifi",
-  "Pet Center",
-];
-
-function getRandomSubset<T>(
-  array: T[],
-  minItems: number,
-  maxItems: number
-): T[] {
-  if (minItems > maxItems) {
-    throw new Error("minItems cannot be greater than maxItems");
-  }
-  if (minItems < 0 || maxItems > array.length) {
-    throw new Error(
-      "minItems or maxItems are out of valid range for the array"
-    );
-  }
-
-  // Generate a random size for the subset within the range [minItems, maxItems]
-  const subsetSize =
-    Math.floor(Math.random() * (maxItems - minItems + 1)) + minItems;
-
-  // Create a copy of the array to avoid modifying the original
-  const arrayCopy = [...array];
-
-  // Shuffle the array copy using Fisher-Yates algorithm
-  for (let i = arrayCopy.length - 1; i > 0; i--) {
-    const randomIndex = Math.floor(Math.random() * (i + 1));
-    [arrayCopy[i], arrayCopy[randomIndex]] = [
-      arrayCopy[randomIndex],
-      arrayCopy[i],
-    ];
-  }
-
-  // Return the first `subsetSize` elements of the shuffled array
-  return arrayCopy.slice(0, subsetSize);
-}
-
-async function seed() {
-  try {
-    // Clear existing data from all collections
-    for (const key in COLLECTIONS) {
-      const collectionId = COLLECTIONS[key as keyof typeof COLLECTIONS];
-      const documents = await databases.listDocuments(
-        config.databaseId!,
-        collectionId!
-      );
-      for (const doc of documents.documents) {
-        await databases.deleteDocument(
-          config.databaseId!,
-          collectionId!,
-          doc.$id
-        );
-      }
-    }
-
-    console.log("Cleared all existing data.");
-
-    // Seed Agents
-    const agents = [];
-    for (let i = 1; i <= 5; i++) {
-      const agent = await databases.createDocument(
-        config.databaseId!,
-        COLLECTIONS.AGENT!,
-        ID.unique(),
-        {
-          name: `Agent ${i}`,
-          email: `agent${i}@example.com`,
-          avatar: agentImages[Math.floor(Math.random() * agentImages.length)],
-        }
-      );
-      agents.push(agent);
-    }
-    console.log(`Seeded ${agents.length} agents.`);
-
-    // Seed Reviews
-    const reviews = [];
-    for (let i = 1; i <= 20; i++) {
-      const review = await databases.createDocument(
-        config.databaseId!,
-        COLLECTIONS.REVIEWS!,
-        ID.unique(),
-        {
-          name: `Reviewer ${i}`,
-          avatar: reviewImages[Math.floor(Math.random() * reviewImages.length)],
-          review: `This is a review by Reviewer ${i}.`,
-          rating: Math.floor(Math.random() * 5) + 1, // Rating between 1 and 5
-        }
-      );
-      reviews.push(review);
-    }
-    console.log(`Seeded ${reviews.length} reviews.`);
-
-    // Seed Galleries
-    const galleries = [];
-    for (const image of galleryImages) {
-      const gallery = await databases.createDocument(
-        config.databaseId!,
-        COLLECTIONS.GALLERY!,
-        ID.unique(),
-        { image }
-      );
-      galleries.push(gallery);
-    }
-
-    console.log(`Seeded ${galleries.length} galleries.`);
-
-    // Seed Properties
-    for (let i = 1; i <= 20; i++) {
-      const assignedAgent = agents[Math.floor(Math.random() * agents.length)];
-
-      const assignedReviews = getRandomSubset(reviews, 5, 7); // 5 to 7 reviews
-      const assignedGalleries = getRandomSubset(galleries, 3, 8); // 3 to 8 galleries
-
-      const selectedFacilities = facilities
-        .sort(() => 0.5 - Math.random())
-        .slice(0, Math.floor(Math.random() * facilities.length) + 1);
-
-      const image =
-        propertiesImages.length - 1 >= i
-          ? propertiesImages[i]
-          : propertiesImages[
-              Math.floor(Math.random() * propertiesImages.length)
-            ];
-
-      const property = await databases.createDocument(
-        config.databaseId!,
-        COLLECTIONS.PROPERTY!,
-        ID.unique(),
-        {
-          name: `Property ${i}`,
-          type: propertyTypes[Math.floor(Math.random() * propertyTypes.length)],
-          description: `This is the description for Property ${i}.`,
-          address: `123 Property Street, City ${i}`,
-          geolocation: `192.168.1.${i}, 192.168.1.${i}`,
-          price: Math.floor(Math.random() * 9000) + 1000,
-          area: Math.floor(Math.random() * 3000) + 500,
-          bedrooms: Math.floor(Math.random() * 5) + 1,
-          bathrooms: Math.floor(Math.random() * 5) + 1,
-          rating: Math.floor(Math.random() * 5) + 1,
-          facilities: selectedFacilities,
-          image: image,
-          agent: assignedAgent.$id,
-          reviews: assignedReviews.map((review) => review.$id),
-          gallery: assignedGalleries.map((gallery) => gallery.$id),
-        }
-      );
-
-      console.log(`Seeded property: ${property.name}`);
-    }
-
-    console.log("Data seeding completed.");
-  } catch (error) {
-    console.error("Error seeding data:", error);
-  }
-}
-
-export default seed;
+```
+Real-Estate-APP/
+├── app/                          # Application screens and routing
+│   ├── (root)/                   # Protected routes
+│   │   ├── (tabs)/              # Bottom tab navigation
+│   │   │   ├── index.tsx        # Home screen
+│   │   │   ├── explore.tsx      # Explore properties screen
+│   │   │   └── profile.tsx      # User profile screen
+│   │   └── properties/          # Property details
+│   │       └── [id].tsx         # Dynamic property detail page
+│   ├── _layout.tsx              # Root layout
+│   ├── sign-in.tsx              # Authentication screen
+│   └── seed-data.tsx            # Database seeding utility
+├── assets/                       # Static assets
+│   ├── fonts/                   # Custom fonts
+│   ├── icons/                   # Icon images
+│   └── images/                  # App images
+├── components/                   # Reusable components
+│   ├── Cards.tsx                # Property card component
+│   ├── Comment.tsx              # Review comment component
+│   ├── Filters.tsx              # Filter component
+│   ├── NoResults.tsx            # Empty state component
+│   └── Search.tsx               # Search bar component
+├── constants/                    # App constants
+│   ├── icons.ts                 # Icon exports
+│   ├── images.ts                # Image exports
+│   └── data.ts                  # Static data
+├── lib/                         # Core utilities and services
+│   ├── appwrite.ts              # Appwrite configuration and API
+│   ├── global-provider.tsx      # Global state provider
+│   ├── useAppwrite.ts           # Custom data fetching hook
+│   ├── seed.ts                  # Database seeding logic
+│   └── data.ts                  # Sample data for seeding
+├── .env.local                   # Environment variables
+├── app.json                     # Expo configuration
+├── package.json                 # Dependencies
+├── tailwind.config.js           # Tailwind configuration
+└── tsconfig.json                # TypeScript configuration
 ```
 
-</details>
+---
 
-<details>
-<summary><code>lib/useAppwrite.ts</code></summary>
+## 🔐 Authentication Flow
 
-```ts
-import { Alert } from "react-native";
-import { useEffect, useState, useCallback } from "react";
+The app uses Google OAuth 2.0 for secure authentication:
 
-interface UseAppwriteOptions<T, P extends Record<string, string | number>> {
-  fn: (params: P) => Promise<T>;
-  params?: P;
-  skip?: boolean;
-}
+```mermaid
+sequenceDiagram
+    participant User
+    participant App
+    participant Appwrite
+    participant Google
 
-interface UseAppwriteReturn<T, P> {
-  data: T | null;
-  loading: boolean;
-  error: string | null;
-  refetch: (newParams: P) => Promise<void>;
-}
+    User->>App: Tap "Continue with Google"
+    App->>Appwrite: Request OAuth2 token
+    Appwrite->>App: Return authorization URL
+    App->>Google: Open browser with auth URL
+    Google->>User: Show login/consent screen
+    User->>Google: Approve access
+    Google->>App: Redirect with auth code
+    App->>Appwrite: Create session with auth code
+    Appwrite->>App: Return session token
+    App->>App: Store session & update UI
+    App->>User: Navigate to Home screen
+```
 
-export const useAppwrite = <T, P extends Record<string, string | number>>({
-  fn,
-  params = {} as P,
-  skip = false,
-}: UseAppwriteOptions<T, P>): UseAppwriteReturn<T, P> => {
-  const [data, setData] = useState<T | null>(null);
-  const [loading, setLoading] = useState(!skip);
-  const [error, setError] = useState<string | null>(null);
+### Authentication Implementation
 
-  const fetchData = useCallback(
-    async (fetchParams: P) => {
-      setLoading(true);
-      setError(null);
-
-      try {
-        const result = await fn(fetchParams);
-        setData(result);
-      } catch (err: unknown) {
-        const errorMessage =
-          err instanceof Error ? err.message : "An unknown error occurred";
-        setError(errorMessage);
-        Alert.alert("Error", errorMessage);
-      } finally {
-        setLoading(false);
-      }
-    },
-    [fn]
+```typescript
+// lib/appwrite.ts
+export async function login() {
+  const redirectUri = Linking.createURL("/");
+  const response = await account.createOAuth2Token(
+    OAuthProvider.Google,
+    redirectUri
   );
 
-  useEffect(() => {
-    if (!skip) {
-      fetchData(params);
-    }
-  }, []);
+  const browserResult = await openAuthSessionAsync(
+    response.toString(),
+    redirectUri
+  );
 
-  const refetch = async (newParams: P) => await fetchData(newParams);
+  const url = new URL(browserResult.url);
+  const secret = url.searchParams.get("secret");
+  const userId = url.searchParams.get("userId");
 
-  return { data, loading, error, refetch };
-};
+  const session = await account.createSession(userId, secret);
+  return session;
+}
 ```
 
-</details>
+---
 
-## <a name="links">🔗 Assets</a>
+## 💾 Database Schema
 
-Assets and snippets used in the project can be found in the **[video kit](https://jsm.dev/rn25-restate)**.
+### Entity Relationship Diagram
 
-Appwrite Database Setup can be found [here](https://jsmastery.notion.site/Database-Setup-16260f3cbaf3807f8fb6cbed8d1e84fd)
+```mermaid
+erDiagram
+    PROPERTIES ||--|| AGENTS : "managed by"
+    PROPERTIES ||--o{ REVIEWS : "has many"
+    PROPERTIES ||--o{ GALLERIES : "has many"
 
-<a href="https://jsm.dev/rn25-restate" target="_blank">
-  <img src="assets/readme/videokit.webp" alt="Video Kit Banner">
-</a>
+    PROPERTIES {
+        string id PK
+        string name
+        string type
+        string description
+        string address
+        string geolocation
+        number price
+        number area
+        number bedrooms
+        number bathrooms
+        number rating
+        array facilities
+        string image
+        string agent FK
+        array reviews FK
+        array gallery FK
+    }
 
+    AGENTS {
+        string id PK
+        string name
+        string email
+        string avatar
+    }
 
-## <a name="more">🚀 More</a>
+    REVIEWS {
+        string id PK
+        string name
+        string avatar
+        string review
+        number rating
+    }
 
-**Advance your skills with Next.js Pro Course**
+    GALLERIES {
+        string id PK
+        string image
+    }
+```
 
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
+### Collection Details
 
-detailed explanations, cool features, and exercises to boost your skills. Give it a go!
+#### Properties Collection
 
-<a href="https://jsm.dev/rn25-jsm" target="_blank">
-   <img src="assets/readme/jsmpro.webp" alt="Project Banner">
-</a>
+| Field       | Type         | Description                        | Required |
+| ----------- | ------------ | ---------------------------------- | -------- |
+| name        | String       | Property name                      | Yes      |
+| type        | String       | Property type (House, Villa, etc.) | Yes      |
+| description | Text         | Detailed description               | Yes      |
+| address     | String       | Physical address                   | Yes      |
+| geolocation | String       | Lat/Long coordinates               | No       |
+| price       | Number       | Property price                     | Yes      |
+| area        | Number       | Area in sq ft                      | Yes      |
+| bedrooms    | Number       | Number of bedrooms                 | Yes      |
+| bathrooms   | Number       | Number of bathrooms                | Yes      |
+| rating      | Number       | Average rating (1-5)               | Yes      |
+| facilities  | Array        | List of amenities                  | No       |
+| image       | String       | Main property image URL            | Yes      |
+| agent       | Relationship | Related agent ID                   | Yes      |
+| reviews     | Relationship | Array of review IDs                | No       |
+| gallery     | Relationship | Array of gallery IDs               | No       |
+
+---
+
+## 🧪 Testing
+
+### Running Tests
+
+```bash
+# Run all tests
+npm test
+
+# Run tests in watch mode
+npm test -- --watch
+
+# Run tests with coverage
+npm test -- --coverage
+```
+
+### Test Structure
+
+```
+__tests__/
+├── components/
+│   ├── Cards.test.tsx
+│   └── Search.test.tsx
+├── lib/
+│   ├── appwrite.test.ts
+│   └── useAppwrite.test.ts
+└── integration/
+    └── authentication.test.tsx
+```
+
+---
+
+## 🗺️ Future Roadmap
+
+### Phase 1: Enhanced User Experience (Q1 2025)
+
+- [ ] **Favorites/Wishlist Feature**
+
+  - Save properties for later viewing
+  - Sync across devices
+  - Share wishlist with others
+
+- [ ] **Advanced Filters**
+
+  - Price range slider
+  - Multiple facility selection
+  - Sort by distance, price, rating
+
+- [ ] **Property Comparison**
+  - Compare up to 3 properties side-by-side
+  - Visual comparison charts
+  - Export comparison as PDF
+
+### Phase 2: Engagement & Notifications (Q2 2025)
+
+- [ ] **Push Notifications**
+
+  - New property alerts based on preferences
+  - Price drop notifications
+  - Saved search alerts
+
+- [ ] **In-App Messaging**
+
+  - Direct chat with agents
+  - Schedule property viewings
+  - Real-time message notifications
+
+- [ ] **Virtual Tours**
+  - 360° property views
+  - Video walkthroughs
+  - AR room visualization
+
+### Phase 3: Advanced Features (Q3 2025)
+
+- [ ] **AI-Powered Recommendations**
+
+  - Personalized property suggestions
+  - Smart search based on user behavior
+  - Price prediction models
+
+- [ ] **Mortgage Calculator**
+
+  - EMI calculator
+  - Loan eligibility checker
+  - Bank comparison
+
+- [ ] **Offline Mode**
+  - Cache property data for offline viewing
+  - Sync when back online
+  - Download property brochures
+
+### Phase 4: Social & Integration (Q4 2025)
+
+- [ ] **Social Features**
+
+  - Share properties on social media
+  - Invite friends & family to view
+  - Community reviews and ratings
+
+- [ ] **Third-Party Integrations**
+
+  - Google Maps integration for directions
+  - Calendar integration for appointments
+  - Email integration for updates
+
+- [ ] **Analytics Dashboard**
+  - User activity tracking
+  - Property view statistics
+  - Search trend analysis
+
+### Long-Term Vision
+
+- **Multi-Language Support**: Add support for regional languages
+- **Dark Mode**: Complete dark theme implementation
+- **Web Platform**: Expand to web using React.js
+- **Admin Dashboard**: Property management portal for agents
+- **Payment Gateway**: Integrate booking/token payment
+- **Blockchain Integration**: Property ownership verification using NFTs
+
+---
+
+## 👨‍💻 Author
+
+<div align="center">
+  
+### **Mausam Kar**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Mausam5055-181717?style=for-the-badge&logo=github)](https://github.com/Mausam5055)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/mausamkar)
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail)](mailto:mausamkar@example.com)
+
+**Full-Stack Developer | React Native Enthusiast | Open Source Contributor**
+
+</div>
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+```
+MIT License
+
+Copyright (c) 2024 Mausam Kar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+## 🙏 Acknowledgments
+
+- **Expo Team** for the amazing development platform
+- **Appwrite** for the powerful BaaS solution
+- **React Native Community** for continuous support and resources
+- **NativeWind** for bringing Tailwind CSS to React Native
+
+---
+
+## 📞 Support
+
+If you encounter any issues or have questions:
+
+1. Check the [Issues](https://github.com/Mausam5055/Real-Estate-APP/issues) page
+2. Create a new issue with detailed information
+3. Join our community discussions
+4. Contact the author directly
+
+---
+
+<div align="center">
+  
+**⭐ Star this repository if you found it helpful!**
+
+**Made with ❤️ by Mausam Kar**
+
+</div>
