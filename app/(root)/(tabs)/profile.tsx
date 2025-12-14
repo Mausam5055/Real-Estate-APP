@@ -114,6 +114,13 @@ const Profile = () => {
             onPress={handleLogout}
           />
         </View>
+
+        {/* Watermark */}
+        <View className="flex items-center justify-center mt-8 mb-4">
+          <Text className="text-sm font-rubik text-black-200 opacity-60">
+            Built By Mausam Kar
+          </Text>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
