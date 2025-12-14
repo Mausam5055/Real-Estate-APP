@@ -11,6 +11,7 @@ import {
 
 import { logout } from "@/lib/appwrite";
 import { useGlobalContext } from "@/lib/global-provider";
+import { useRouter } from "expo-router";
 
 import icons from "@/constants/icons";
 import { settings } from "@/constants/data";
@@ -47,6 +48,7 @@ const SettingsItem = ({
 
 const Profile = () => {
   const { user, refetch } = useGlobalContext();
+  const router = useRouter();
 
   const handleLogout = async () => {
     const result = await logout();
@@ -56,6 +58,10 @@ const Profile = () => {
     } else {
       Alert.alert("Error", "Failed to logout");
     }
+  };
+
+  const handleSeedData = () => {
+    router.push("/seed-data");
   };
 
   return (
@@ -95,6 +101,11 @@ const Profile = () => {
         </View>
 
         <View className="flex flex-col border-t mt-5 pt-5 border-primary-200">
+          <SettingsItem
+            icon={icons.info}
+            title="🌱 Seed Database"
+            onPress={handleSeedData}
+          />
           <SettingsItem
             icon={icons.logout}
             title="Logout"
