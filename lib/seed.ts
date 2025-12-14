@@ -174,9 +174,9 @@ async function seed() {
           rating: Math.floor(Math.random() * 5) + 1,
           facilities: selectedFacilities,
           image: image,
-          agent: assignedAgent.$id,
+          agents: assignedAgent.$id,
           reviews: assignedReviews.map((review) => review.$id),
-          gallery: assignedGalleries.map((gallery) => gallery.$id),
+          galleries: assignedGalleries.map((gallery) => gallery.$id),
         }
       );
 
@@ -186,7 +186,13 @@ async function seed() {
     console.log("Data seeding completed.");
   } catch (error) {
     console.error("Error seeding data:", error);
+    throw error;
   }
+}
+
+// Only run seed if this file is executed directly
+if (require.main === module) {
+  seed();
 }
 
 export default seed;

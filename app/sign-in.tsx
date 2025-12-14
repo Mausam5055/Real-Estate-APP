@@ -10,13 +10,14 @@ import {
 } from "react-native";
 
 import { login } from "@/lib/appwrite";
-import { Redirect } from "expo-router";
+import { Redirect, useRouter } from "expo-router";
 import { useGlobalContext } from "@/lib/global-provider";
 import icons from "@/constants/icons";
 import images from "@/constants/images";
 
 const Auth = () => {
   const { refetch, loading, isLogged } = useGlobalContext();
+  const router = useRouter();
 
   if (!loading && isLogged) return <Redirect href="/" />;
 
@@ -70,6 +71,15 @@ const Auth = () => {
                 Continue with Google
               </Text>
             </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => router.push("/seed-data")}
+            className="bg-gray-200 rounded-full w-full py-4 mt-3"
+          >
+            <Text className="text-lg font-rubik-medium text-black-300 text-center">
+              🌱 Seed Database
+            </Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
